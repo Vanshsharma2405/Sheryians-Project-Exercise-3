@@ -14,17 +14,21 @@
     font-family: 'Passenger Sans Variable Thin';
     src: url('PassengerSans-Variable.e7fbe7bf.woff2');
 }
-
+@font-face {
+    font-family: 'Gilroy-black';
+    src: url('Gilroy-Black.woff2');
+}
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'matter-light';
+
 }
 html , body{
     height: 100%;
     width: 100%;
+    font-family: 'matter-light';
 }
 #main{
     width: 100%;
@@ -177,6 +181,92 @@ html , body{
     height: 5vh;
     background-color: #000;
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contant{
+    height: 76%;
+    width: 35%;
+    background:linear-gradient(180deg, rgba(173, 216, 230, 0.671),rgba(135, 207, 235, 0.479));
+    border-radius: 15px;
+    /* display: block; */
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 30px #00000041;
+}
+#contant h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 27px;
+    font-family: 'Gilroy-black';
+}
+#contant form{
+    display: inline-block;
+}
+#contant form{
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+    
+}
+form{
+    align-items: center;
+    justify-content: center;
+}
+#contant form input{
+    padding: 10px 10px ;
+    width: 92%;
+    margin: 0 0 0 35px;
+    border-radius: 8px;
+    border: 1px solid #00000081;
+    background-color: #ffffff8a;
+    font-family: 'matter-light';
+    font-weight: 600;
+    letter-spacing: 1px;
+    outline: none;
+}
+#contant form label{
+    margin: 0 0 0 40px;
+    font-family: 'matter-regular';
+}
+#contant form textarea{
+    resize: none;
+    margin-left: 35px;
+    padding-top: 7px;
+    padding-left: 10px;
+    width: 30vw;
+    border-radius: 8px;
+    background-color: #ffffff6e;
+    outline: none;
+}
+#contant form button{
+    text-align: center;
+    transform: translate(10%,6%);
+    padding: 10px 10px ;
+    width: 90.5%;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 1px solid #00000071;
+    background-color: rgb(69, 69, 253);
+    color: #fff;
+    font-family: "matter-regular";
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .3s;
+    font-size: 1.1vw;
+}
+#contant form button:hover{
+    box-shadow: 2px 2px 20px #1817174d;
+}
+#contant form input:hover{
+    box-shadow: 2px 2px 20px #00000031;
+}
+#contant form textarea:hover{
+    box-shadow: 2px 2px 20px rgba(90, 90, 255, 0.425);
+    
+}
+#page2 {
+    height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
